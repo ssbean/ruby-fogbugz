@@ -6,7 +6,7 @@ module Fogbugz
     module XML
       class Nokogiri
         def self.parse(xml)
-          Nokogiri::XML::Document.parse(xml)["response"] { |config| config.nonet }
+          Nokogiri::XML::Document.parse(xml) { |config| config.nonet }
         end
       end
     end

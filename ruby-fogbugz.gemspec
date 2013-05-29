@@ -16,6 +16,7 @@ Gem::Specification.new do |s|
 
   # s.add_dependency('typhoeus')
   s.add_dependency('nokogiri')
+  s.add_dependency('open-uri')    
 
   s.add_development_dependency('minitest')
   s.add_development_dependency('mocha')
