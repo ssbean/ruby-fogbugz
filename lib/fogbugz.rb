@@ -8,7 +8,7 @@ module Fogbugz
   end
 
   self.adapter = {
-    :xml  => Adapter::XML::Cracker,
+    :xml  => Adapter::XML::Nokogiri,
     :http => Adapter::HTTP::NetHttp
   }
 end

@@ -6,8 +6,8 @@ Gem::Specification.new do |s|
   s.name        = "ruby-fogbugz"
   s.version     = Fogbugz::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Simon Hørup Eskildsen"]
-  s.email       = ["sirup@sirupsen.com"]
+  s.authors     = ["Spencer Bean"]
+  s.email       = ["ssbean@gmail.com"]
   s.homepage    = ""
   s.summary     = %q{Ruby wrapper for the Fogbugz API }
   s.description = %q{A simple Ruby wrapper for the Fogbugz XML API}
@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.rubyforge_project = "ruby-fogbugz"
 
   # s.add_dependency('typhoeus')
-  s.add_dependency('crack')
+  s.add_dependency('nokogiri')
 
   s.add_development_dependency('minitest')
   s.add_development_dependency('mocha')
