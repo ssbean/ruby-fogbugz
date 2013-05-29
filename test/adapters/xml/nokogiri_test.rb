@@ -1,7 +1,7 @@
 require 'test_helper'
-require 'ruby_fogbugz/adapters/xml/cracker'
+require 'ruby_fogbugz/adapters/xml/nokogiri'
 
-class Cracker < FogTest
+class Nokogiri < FogTest
   test 'should parse XML and get rid of the response namespace' do
     XML = <<-xml
       <?xml version="1.0" encoding="UTF-8"?>
@@ -10,6 +10,6 @@ class Cracker < FogTest
       </response>
     xml
 
-    assert_equal({"version" => "2"}, Fogbugz::Adapter::XML::Cracker.parse(XML))
+    assert_equal({"version" => "2"}, Fogbugz::Adapter::XML::Nokogiri.parse(XML))
   end
 end
