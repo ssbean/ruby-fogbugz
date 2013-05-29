@@ -6,7 +6,7 @@ module Fogbugz
     module XML
       class Nokogiri
         def self.parse(xml)
-          Nokogiri.parse(xml)
+          Nokogiri::XML.parse(xml)
         end
       end
     end
